@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en">
+     
+
+    <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <meta name="description" content="Landing PAGE Html5 Template">
+    
+        <meta name="keywords" content="landing,startup,flat">
+    
+        <meta name="author" content="Made By GN DESIGNS">
+    
+    
+    
+        <title>TUNADA-3301 Signup</title>
+    
+    
+        <!-- // PLUGINS (css files) // -->
+    
+        <link href="assets/js/plugins/bootsnav_files/skins/color.css" rel="stylesheet">
+    
+        <link href="assets/js/plugins/bootsnav_files/css/animate.css" rel="stylesheet">
+    
+        <link href="assets/js/plugins/bootsnav_files/css/bootsnav.css" rel="stylesheet">
+    
+        <link href="assets/js/plugins/bootsnav_files/css/overwrite.css" rel="stylesheet">
+    
+        <link href="assets/js/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    
+        <link href="assets/js/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    
+        <link href="assets/js/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    
+        <link href="assets/js/plugins/Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
+    
+        <!--// ICONS //-->
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <!--// BOOTSTRAP & Main //-->
+    
+        <link href="assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <link href="assets/css/main.css" rel="stylesheet">
+        <script src="../../cicada3301/script.js"></script>
+
+    </head>    
+
+
+<body>
+
+
+
+    <!--======================================== 
+
+           Preloader
+
+    ========================================-->
+
+    <div class="page-preloader">
+
+        <div class="spinner">
+
+            <div class="rect1"></div>
+
+            <div class="rect2"></div>
+
+            <div class="rect3"></div>
+
+            <div class="rect4"></div>
+
+            <div class="rect5"></div>
+
+        </div>
+
+    </div>
+
+    <!--======================================== 
+
+           Header
+
+    ========================================-->
+
+
+
+    <!--//** Navigation**//-->
+
+    <nav class="navbar navbar-default navbar-fixed white no-background bootsnav navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+
+
+        <div class="container">
+
+            <!-- Start Header Navigation -->
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+
+                    <i class="fa fa-bars"></i>
+
+                </button>
+                <a class="navbar-brand" href="#brand">
+
+                    <img src="../../cicada3301/images/logo.png" class="logo" alt="logo" style="width:50px;height:50px;">
+
+                </a>
+
+            </div>
+
+            <!-- End Header Navigation -->
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="active "><a href="#home">Home</a></li>
+
+                    <li class=""><a href="#team">X-winners</a></li>
+
+                    <li class=""><a href="#clients">Sponsors</a></li>
+
+                    <li class="button-holder">
+
+                        <button type="button" class="btn btn-blue navbar-btn" onclick="location.replace('login.html')">Login</button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- /.navbar-collapse -->
+
+        </div>
+
+    </nav>
+
+
+
+    <!--//** Banner**//-->
+
+    <section id="home">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Introduction -->
+
+                <div class="col-md-6 caption">
+
+                    <h1>Welcome To </h1>
+                    <h1>TUNADA-3301</h1>
+
+                    <h2>
+
+                           You
+
+                            <span class="animated-text"></span>
+
+                            <span class="typed-cursor"></span>
+
+                        </h2>
+
+                    <p> <b>SIGNUP</b> you will be able to complete the big challenge </p>
+
+                    <a href="login.html" class="btn btn-transparent" id="signupBtn" >Login</a>
+
+                </div>
+
+                <!-- Sign Up -->
+
+                <div class="col-md-5 col-md-offset-1" >
+
+                    <form class="sign-form">
+
+                        <h2 class="text-center" style="color:black ;">Registration</h2>
+                    
+                        <hr>
+                    
+                        <div class="form-group">
+                    
+                            <input type="text" class="form-control" placeholder="Full Name" id ="fullName" required="required">
+                    
+                        </div>
+                        <span id="fullNameError"></span>
+                        <div class="form-group">
+                    
+                            <input type="email" class="form-control" placeholder="Email Address" id="email" required="required">
+                    
+                        </div>
+                        <span id="emailError"></span>
+                        <span id="emailExistError"></span>
+                        <div class="form-group">
+                    
+                            <input type="text" class="form-control" placeholder="User Name" id="userName" required="required">
+                    
+                        </div>
+                        <span id="userNameError"></span>
+                        <div class="form-group">
+                    
+                            <input type="text" class="form-control" placeholder="Password" required="required" id="pwd">
+                    
+                        </div>
+                        <span id="passwordError"></span>
+                        <div class="form-group text-center">
+                    
+                            <a type="" class="btn btn-blue btn-block" onclick="signup()">Register</a>
+                    
+                        </div>
+                    
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+
+    <!--======================================== 
+
+           Team
+
+    ========================================-->
+
+
+
+    <section  class="section-padding" style="background-color:#000000 ;">
+
+        <div class="container">
+
+            <h2 style="color:#ffea00; margin-bottom: 30px;" id="X-winners">X- Tunada-3301 Winners</h2>
+
+            <div class="row" >
+
+                <div class="col-md-6 col-lg-3">
+
+                    <!--**Team-Member**-->
+
+                    <div class="thumbnail team-member">
+
+                        <img src="assets/img/team-1.jpg" class="img-responsive img-circle" alt="team-1">
+
+                        <div class="caption">
+
+                            <h4>Adam White</h4>
+
+                            <h5><b> The Winner of july</b></h5>
+                            <hr>
+                            <p><b> score : 9850</p>
+                            <p><b> Time :  5j-5h-40m-55s</p>
+                            <hr>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <!--**Team-Member**-->
+
+                    <div class="thumbnail team-member">
+
+                        <img src="assets/img/team-2.jpg" class="img-responsive img-circle" alt="team-2">
+
+                        <div class="caption">
+
+                            <h4>Adam White</h4>
+
+                            <h5><b> The Winner of jun</b></h5>
+                            <hr>
+                            <p><b> score : 9850</p>
+                            <p><b> Time :  5j-5h-40m-55s</p>
+                            <hr>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <!--**Team-Member**-->
+
+                    <div class="thumbnail team-member">
+
+                        <img src="assets/img/team-3.jpg" class="img-responsive img-circle" alt="team-3">
+
+                        <div class="caption">
+
+                            <h4>Adam White</h4>
+
+                            <h5><b> The Winner of mail</b></h5>
+                            <hr>
+                            <p><b> score : 9850</p>
+                            <p><b> Time :  5j-5h-40m-55s</p>
+                            <hr>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <!--**Team-Member**-->
+
+                    <div class="thumbnail team-member">
+
+                        <img src="assets/img/team-4.jpg" class="img-responsive img-circle" alt="team-4">
+
+                        <div class="caption">
+
+                            <h4>Adam White</h4>
+
+                            <h5><b> The Winner of appril</b></h5>
+                            <hr>
+                            <p><b> score : 9850</p>
+                            <p><b> Time :  5j-5h-40m-55s</p>
+                            <hr>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--======================================== 
+
+           Clients
+
+    ========================================-->
+
+
+
+    <section id="clients" class="section-padding">
+
+        <div class="container">
+
+            <div class="row">
+
+                <h2>Clients Trust Us</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, optio.</p>
+
+                <!--// Clients Images //-->
+
+                <div class="clients-images">
+
+                    <div id="owl-clients">
+
+                        <div class="item"><img src="assets/img/clients/c_logo01.png" class="center-block" alt="client"></div>
+
+                        <div class="item"><img src="assets/img/clients/c_logo02.png" class="center-block" alt="client"></div>
+
+                        <div class="item"><img src="assets/img/clients/c_logo03.png" class="center-block" alt="client"></div>
+
+                        <div class="item"><img src="assets/img/clients/c_logo04.png" class="center-block" alt="client"></div>
+
+                        <div class="item"><img src="assets/img/clients/c_logo05.png" class="center-block" alt="client"></div>
+
+                        <div class="item"><img src="assets/img/clients/c_logo06.png" class="center-block" alt="client"></div>
+
+                    </div>
+
+                </div>
+
+                <!--// Clients Testimonials //-->
+
+                <div id="owl-testimonials">
+
+                    <div class="item">
+
+                        <i class="material-icons">mood</i>
+
+                        <p class="quote">Vivamus quam neque, aliquet ac faucibus ut, vestibulum. Nulla quis laoreet diam. Donec sed egestas ex, nec facilisis ante. Vivamus imperdiet odio. Cras luctus interdum sodales. Quisque quis odio dui.</p>
+
+                        <h4>-John Doe, Company inc.</h4>
+
+                    </div>
+
+                    <div class="item">
+
+                        <i class="material-icons">mood</i>
+
+                        <p class="quote">Vivamus quam neque, aliquet ac faucibus ut, vestibulum. Nulla quis laoreet diam. Donec sed egestas ex, nec facilisis ante. Vivamus imperdiet odio. Cras luctus interdum sodales. Quisque quis odio dui.</p>
+
+                        <h4>-Jarl Doe, Company inc.</h4>
+
+                    </div>
+
+                    <div class="item">
+
+                        <i class="material-icons">mood</i>
+
+                        <p class="quote">Vivamus quam neque, aliquet ac faucibus ut, vestibulum. Nulla quis laoreet diam. Donec sed egestas ex, nec facilisis ante. Vivamus imperdiet odio. Cras luctus interdum sodales. Quisque quis odio dui.</p>
+
+                        <h4>-Adam Doe, Company inc.</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--======================================== 
+
+           Modal
+
+    ========================================-->
+
+
+
+    <!-- Modal -->
+
+    <!-- <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <h4 class="modal-title text-center" id="myModalLabel">Sign In</h4>
+
+                </div>
+
+                <!-- <div class="modal-body">
+
+                    <form class="signup-form">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="User Name" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Password" required="required" id="pwd">
+
+                        </div>
+                        
+                        <div class="form-group text-center">
+
+                            <button type="submit" class="btn btn-blue btn-block">Log In</button>
+
+                        </div>
+
+                    </form>
+
+                </div> -->
+
+                <!-- <div class="modal-footer text-center">
+
+                    <a href="#">Forgot your password /</a>
+
+                    <a href="#">Signup</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> -->
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+ 
+     <script src="assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+ 
+     <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+ 
+     <script src="assets/js/plugins/bootsnav_files/js/bootsnav.js"></script>
+ 
+     <script src="assets/js/plugins/typed.js-master/typed.js-master/dist/typed.min.js"></script>
+
+     <script src="assets/js/main.js"></script>
+      
+
+</body>
+
+
+
+</html>
